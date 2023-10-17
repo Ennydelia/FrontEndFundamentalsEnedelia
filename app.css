@@ -1,6 +1,79 @@
 /*reglas generales*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair:opsz@5..1200&family=Raleway&display=swap');
+
+.muebles{
+    color: #037BC0;
+}
+
+html{
+    font-size: 62.5%;
+    max-width: 1200px;
+    padding: 0;
+    margin: 0;
+}
+
+body{   
+    font-family: 'Raleway', sans-serif;
+  /*Aparecer tamaño de imagen pendiente*/
+    line-height: 2;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Playfair', sans-serif;
+}
+
+h1{
+    font-size: 5rem;
+    text-align: center;
+}
+
+h2{
+    font-size: 4rem;
+    text-align: center;
+}
+
+h3{
+    font-size: 4rem;
+    text-align: center;
+}
 
 /*Media Query*/
+.hero{
+    padding: 25rem;
+    background: url("principal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+    display: flex;
+
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+.producto1{
+    margin-top: 1.6em;
+    margin-bottom: 1.6em;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    gap: 1.6rem;
+    grid-template-columns: 2fr 1fr;
+}
+
+.img1{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 /** Reescribir colores */
 
