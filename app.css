@@ -1,80 +1,110 @@
-/*reglas generales*/
+/*Importacion de Fonts en Google*/
 @import url('https://fonts.googleapis.com/css2?family=Playfair:opsz@5..1200&family=Raleway&display=swap');
 
+/*reglas generales*/
+html{
+    font-size: 62.5;
+}
+
+/*Clase Muebles*/
 .muebles{
     color: #037BC0;
 }
 
-html{
-    font-size: 62.5%;
-    max-width: 1200px;
-    padding: 0;
-    margin: 0;
-}
-
+/*Body de la pagina*/
 body{   
     font-family: 'Raleway', sans-serif;
-  /*Aparecer tamaño de imagen pendiente*/
+    background-size: 1.6em;
     line-height: 2;
 }
 
+/*Titulos de la pagina*/
 h1, h2, h3, h4, h5, h6{
     font-family: 'Playfair', sans-serif;
 }
 
+/*Configuracion de Titulos*/
 h1{
-    font-size: 5rem;
+    font-size: 5em;
     text-align: center;
 }
 
 h2{
-    font-size: 4rem;
+    font-size: 4em;
     text-align: center;
 }
 
 h3{
-    font-size: 4rem;
+    font-size: 4em;
     text-align: center;
 }
 
-/*Media Query*/
+/*Clase Hero*/
 .hero{
-    padding: 25rem;
-    background: url("principal.jpg");
+    padding: 25em;
+    background: url("imagenes/principal.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+/*Uso de FlexBox en Navbar*/
 .navbar ul{
     display: flex;
     justify-content: space-between;
 }
 
-li{
+.linavbar{
     display: flex;
-
+}
+.linavbar a{
+    color: black;
+    text-decoration: none;
 }
 
+/*Seccion de productos*/
+
+/*Seccion de Categorias*/
+.categorias{
+    justify-content: center;
+    padding: 50px;
+}
+.container{
+    display: flex;
+    row-gap: 20px;
+    column-gap: 50px;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+.container img{
+    border-radius: 10px;
+    width: 360px;
+    height: 180px;
+}
+
+.container a{
+    color: black;
+    text-decoration: none;
+}
+
+/*Uso de FlexBox en footer*/
 footer{
     display: flex;
-    justify-content: space-between;
-}
-.producto1{
-    margin-top: 1.6em;
-    margin-bottom: 1.6em;
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    gap: 1.6rem;
-    grid-template-columns: 2fr 1fr;
+    column-gap: 30px;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
 }
 
-.img1{
-    background-repeat: no-repeat;
-    background-size: cover;
+.footernav li{
+    display: flex;
+    justify-content: center;
+}
+.footernav a{
+    color: black;
+    text-decoration: none;
 }
 
 
-/** Reescribir colores */
 
-/** Productos */
