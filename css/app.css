@@ -42,7 +42,7 @@ h3{
 /*Clase Hero*/
 .hero{
     padding: 25em;
-    background: url("imagenes/principal.jpg");
+    background: url("../imagenes/principal.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
