@@ -1,15 +1,12 @@
 /*reglas generales*/
 /*Importacion de Fonts en Google*/
 @import url('https://fonts.googleapis.com/css2?family=Playfair:opsz@5..1200&family=Raleway&display=swap');
-/*Media Query*/
 
-/* Estilos generales */
-html{
-    font-size: 1em;
-}
 
-/*Body de la pagina*/
-body{   
+/*Body*/
+body {
+    background-color: #f4f4f4;
+    margin: 0;
     font-family: 'Raleway', sans-serif;
     background-size: 1.6em;
     line-height: 2;
@@ -36,37 +33,28 @@ h3{
     font-size: 2em;
 }
 
+h4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+}
 
 /*Clase Muebles*/
 .muebles{
     color: #037BC0;
 }
-
 /*Clase Hero*/
 .hero{
     padding: 25em;
     background: url("../imagenes/principal.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    width:100%;
+    height:100%;
 }
 
-/*Seccion de productos*/
-.productos{
-    justify-content: center;
-    padding: 50px;
-    display: grid;
-    column-gap: 20px;
-    row-gap: 20px;
-    grid-template-columns: repeat(6fr 1fr);
-    grid-template-rows: repeat(3fr 1fr);
-    grid-template-areas: 
-    "uno uno uno uno uno uno"
-    "dos dos dos tres tres tres"
-    "cuatro cuatro cinco cinco seis seis";
-}
-
+/*Productos se usa card de bootstrap, se cancela uso de grid*/
 /*CSS General para la info de cuadros*/
-.textproduct{
+.textoProductos{
     border: 2px solid;
     border-radius: 10px;
     border-color: #D8D8D8;
@@ -74,6 +62,10 @@ h3{
     color: white;
     padding: 20px;
     text-align: center;
+}
+
+.cardproducto{
+    border: none;
 }
 
 .button{
@@ -84,13 +76,7 @@ h3{
     padding: 0px 20px 0px 20px
 }
 
-/*Producto 1*/
-.producto1{
-    display: flex;
-    grid-area: uno;
-}
-
-.producto1 img{
+.productoimg img {
     border-radius: 10px;
     border: 2px solid;
     border-color: #D8D8D8;
@@ -99,99 +85,30 @@ h3{
     object-fit: cover;
 }
 
-/*Producto 2*/
-.producto2{
-    display: flex;
-    grid-area: dos;
-}
-
-.producto2 img{
-    border-radius: 10px;
-    border: 2px solid;
-    border-color: #D8D8D8;
-}
-
-/*Producto 3*/
-.producto3{
-    display: flex;
-    grid-area: tres;
-}
-
-.producto3 img{
-    border-radius: 10px;
-    border: 2px solid;
-    border-color: #D8D8D8;
-}
-
-/*Producto 4*/
-.producto4{
-    display: flex;
-    grid-area: cuatro;
-}
-
-.producto4 img{
-    border-radius: 10px;
-    border: 2px solid;
-    border-color: #D8D8D8;
-}
-/*Producto 5*/
-.producto5{
-    display: flex;
-    grid-area: cinco;
-}
-
-.producto5 img{
-    border-radius: 10px;
-    border: 2px solid;
-    border-color: #D8D8D8;
-}
-/*Producto 6*/
-.producto6{
-    display: flex;
-    grid-area: seis;
-}
-
-.producto6 img{
-    border-radius: 10px;
-    border: 2px solid;
-    border-color: #D8D8D8;
-}
 /*Seccion de Categorias*/
-.categorias{
-    justify-content: center;
-    padding: 50px;
-}
-.container{
-    display: flex;
-    row-gap: 20px;
-    column-gap: 50px;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center;
-}
-
-.container img{
-    border-radius: 10px;
-    width: 360px;
-    height: 180px;
-}
-
 .container a{
     color: black;
     text-decoration: none;
 }
 
-/*Uso de FlexBox en footer*/
-.footer{
-    display: flex;
-    column-gap: 40px;
-    flex-direction: row;
-    justify-content: center;
+.categorias img {
+    height: 90%;
+    width: 90%;
+    border-radius:10px;
 }
 
-footer h3{
+.categorias img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+footer h4{
+    display: flex;
+    justify-content: center;
     text-align: center;
 }
+
+/*Footer seccion*/
 .footernav li{
     display: flex;
     justify-content: center;
@@ -200,15 +117,22 @@ footer h3{
 .footernav a{
     color: black;
     text-decoration: none;
-}
-
-footer p{
-    font-size: 0.8em;
+    justify-content: center;
     text-align: center;
 }
 
 
 
+/*Inicio de Media Query para temas de telefonos/Tablets*/
+@media only screen and (max-width: 768px){
+    .hero {
+       padding: 55em;
+    }
 
+    h2 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+    
 
-
+}
