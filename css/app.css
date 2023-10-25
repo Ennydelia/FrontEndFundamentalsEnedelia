@@ -1,14 +1,11 @@
+/*reglas generales*/
 /*Importacion de Fonts en Google*/
 @import url('https://fonts.googleapis.com/css2?family=Playfair:opsz@5..1200&family=Raleway&display=swap');
+/*Media Query*/
 
-/*reglas generales*/
+/* Estilos generales */
 html{
-    font-size: 62.5;
-}
-
-/*Clase Muebles*/
-.muebles{
-    color: #037BC0;
+    font-size: 1em;
 }
 
 /*Body de la pagina*/
@@ -35,8 +32,14 @@ h2{
 }
 
 h3{
-    font-size: 4em;
-    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+}
+
+
+/*Clase Muebles*/
+.muebles{
+    color: #037BC0;
 }
 
 /*Clase Hero*/
@@ -47,22 +50,112 @@ h3{
     background-size: cover;
 }
 
-/*Uso de FlexBox en Navbar*/
-.navbar ul{
-    display: flex;
-    justify-content: space-between;
-}
-
-.linavbar{
-    display: flex;
-}
-.linavbar a{
-    color: black;
-    text-decoration: none;
-}
-
 /*Seccion de productos*/
+.productos{
+    justify-content: center;
+    padding: 50px;
+    display: grid;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-columns: repeat(6fr 1fr);
+    grid-template-rows: repeat(3fr 1fr);
+    grid-template-areas: 
+    "uno uno uno uno uno uno"
+    "dos dos dos tres tres tres"
+    "cuatro cuatro cinco cinco seis seis";
+}
 
+/*CSS General para la info de cuadros*/
+.textproduct{
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: #D8D8D8;
+    background-color: #037BC0;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.button{
+    background-color: #8cbc00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0px 20px 0px 20px
+}
+
+/*Producto 1*/
+.producto1{
+    display: flex;
+    grid-area: uno;
+}
+
+.producto1 img{
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: #D8D8D8;
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+/*Producto 2*/
+.producto2{
+    display: flex;
+    grid-area: dos;
+}
+
+.producto2 img{
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: #D8D8D8;
+}
+
+/*Producto 3*/
+.producto3{
+    display: flex;
+    grid-area: tres;
+}
+
+.producto3 img{
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: #D8D8D8;
+}
+
+/*Producto 4*/
+.producto4{
+    display: flex;
+    grid-area: cuatro;
+}
+
+.producto4 img{
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: #D8D8D8;
+}
+/*Producto 5*/
+.producto5{
+    display: flex;
+    grid-area: cinco;
+}
+
+.producto5 img{
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: #D8D8D8;
+}
+/*Producto 6*/
+.producto6{
+    display: flex;
+    grid-area: seis;
+}
+
+.producto6 img{
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: #D8D8D8;
+}
 /*Seccion de Categorias*/
 .categorias{
     justify-content: center;
@@ -89,22 +182,33 @@ h3{
 }
 
 /*Uso de FlexBox en footer*/
-footer{
+.footer{
     display: flex;
-    column-gap: 30px;
+    column-gap: 40px;
     flex-direction: row;
     justify-content: center;
-    text-align: center;
 }
 
+footer h3{
+    text-align: center;
+}
 .footernav li{
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 .footernav a{
     color: black;
     text-decoration: none;
 }
+
+footer p{
+    font-size: 0.8em;
+    text-align: center;
+}
+
+
+
 
 
 
