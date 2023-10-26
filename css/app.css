@@ -48,8 +48,9 @@ h4{
     background: url("../imagenes/principal.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 130vh;
+    
 }
 
 /*Productos se usa card de bootstrap, se cancela uso de grid*/
@@ -126,7 +127,13 @@ footer h4{
 /*Inicio de Media Query para temas de telefonos/Tablets*/
 @media only screen and (max-width: 768px){
     .hero {
-       padding: 55em;
+        width: 100%;
+        height: 40vh;
+    }
+
+    h1 {
+        font-size: 3em;
+        font-weight: 700;
     }
 
     h2 {
